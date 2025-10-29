@@ -1,7 +1,7 @@
 resource "aws_s3_bucket" "main" {
-  bucket = "cmtr-0485d781-bucket-1761759339"
+  bucket = var.bucket_name
 
   tags = {
-    Project = "cmtr-0485d781"
+    Project = var.project_tag
   }
 }
